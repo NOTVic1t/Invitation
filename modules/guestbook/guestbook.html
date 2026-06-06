@@ -1,0 +1,35 @@
+<section id="guestbook-section" class="section-block guestbook-section" aria-labelledby="guestbook-heading">
+  <div class="guestbook-container">
+    <header class="section-header reveal">
+      <p class="section-label">Ucapan &amp; Doa</p>
+      <h2 class="section-title" id="guestbook-heading">Buku Tamu</h2>
+      <div class="section-divider" aria-hidden="true"><span></span><span class="divider-gem">◆</span><span></span></div>
+    </header>
+
+    <!-- Form -->
+    <div class="guestbook-form-wrap reveal reveal-delay-1">
+      <form id="guestbook-form" class="guestbook-form" novalidate aria-label="Guestbook Form">
+        <div class="gb-form-row">
+          <div class="form-field">
+            <label for="gb-name" class="form-label">Nama</label>
+            <input type="text" id="gb-name" name="guest_name" class="form-input" placeholder="Nama Anda" required autocomplete="name" />
+          </div>
+          <div class="form-field">
+            <label for="gb-message" class="form-label">Ucapan &amp; Doa</label>
+            <textarea id="gb-message" name="message" class="form-textarea" placeholder="Tulis ucapan dan doa terbaik untuk mempelai..." required rows="3"></textarea>
+          </div>
+        </div>
+        <div class="form-error hidden" id="gb-error" role="alert"></div>
+        <button type="submit" class="btn-submit" id="gb-submit">
+          <span id="gb-submit-text">Kirim Ucapan</span>
+          <span id="gb-submit-loading" class="hidden">Mengirim...</span>
+        </button>
+      </form>
+    </div>
+
+    <!-- Messages List -->
+    <div id="guestbook-list" class="guestbook-list" role="list" aria-live="polite" aria-label="Daftar ucapan">
+      <div class="gb-loading" id="gb-loading">Memuat ucapan...</div>
+    </div>
+  </div>
+</section>

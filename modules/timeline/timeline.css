@@ -1,0 +1,83 @@
+/* ============================================================
+   VICTOR INVITATION ENGINE V1
+   modules/timeline/timeline.css
+   Created by Victor Rizki Valentiano
+   ============================================================ */
+
+.timeline-section {
+  padding: 5rem 1.5rem;
+  background: var(--color-section-dark, #080605);
+}
+
+.timeline-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.timeline-list {
+  margin-top: 2.5rem;
+  position: relative;
+}
+
+.timeline-list::before {
+  content: '';
+  position: absolute;
+  left: 80px;
+  top: 0; bottom: 0;
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, var(--color-gold, rgba(200,170,120,0.2)) 10%, var(--color-gold, rgba(200,170,120,0.2)) 90%, transparent);
+}
+
+.timeline-item {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  align-items: flex-start;
+  padding-left: 0;
+  position: relative;
+}
+
+.timeline-time {
+  min-width: 80px;
+  text-align: right;
+  font-family: var(--font-body, Georgia, serif);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  color: var(--color-gold-muted, rgba(200,170,120,0.6));
+  padding-top: 0.15rem;
+}
+
+.timeline-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--color-gold, rgba(200,170,120,0.6));
+  transform: rotate(45deg);
+  flex-shrink: 0;
+  margin-top: 0.35rem;
+  position: relative;
+  z-index: 1;
+}
+
+.timeline-content {
+  flex: 1;
+}
+
+.timeline-title {
+  font-family: var(--font-display, Georgia, serif);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-text, #e8ddd0);
+  margin-bottom: 0.2rem;
+}
+
+.timeline-desc {
+  font-family: var(--font-body, Georgia, serif);
+  font-size: 0.78rem;
+  color: var(--color-text-muted, rgba(232,221,208,0.5));
+  line-height: 1.6;
+}
+
+@media (max-width: 400px) {
+  .timeline-list::before { left: 60px; }
+  .timeline-time { min-width: 60px; font-size: 0.63rem; }
+}

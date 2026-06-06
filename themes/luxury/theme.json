@@ -1,0 +1,34 @@
+{
+  "_comment": "Victor Invitation Engine V1 — Luxury Theme — Created by Victor Rizki Valentiano",
+  "name": "luxury",
+  "label": "Luxury Gold",
+  "fonts": {
+    "display": "'Cormorant Garamond', Georgia, serif",
+    "body": "'EB Garamond', Georgia, serif",
+    "accent": "'Cormorant SC', Georgia, serif",
+    "googleFonts": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Cormorant+SC:wght@300;400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap"
+  },
+  "colors": {
+    "bg": "#0a0806",
+    "section-alt": "#0e0b07",
+    "section-dark": "#070504",
+    "text": "#e8ddd0",
+    "text-muted": "rgba(232,221,208,0.55)",
+    "gold": "#c8aa78",
+    "gold-muted": "rgba(200,170,120,0.65)",
+    "gold-faint": "rgba(200,170,120,0.05)",
+    "gold-bright": "#d4b87a",
+    "card-bg": "rgba(255,255,255,0.02)",
+    "input-bg": "rgba(255,255,255,0.04)",
+    "input-focus": "rgba(200,170,120,0.06)",
+    "bg-overlay": "rgba(10,8,6,0.85)",
+    "petal": "rgba(200,170,120,0.35)",
+    "primary": "#0a0806"
+  },
+  "effects": {
+    "border-radius": "0",
+    "transition-speed": "0.4s"
+  },
+  "particles": true,
+  "opening-overlay": "linear-gradient(160deg, rgba(10,8,6,0.88) 0%, rgba(10,8,6,0.55) 50%, rgba(10,8,6,0.92) 100%)"
+}

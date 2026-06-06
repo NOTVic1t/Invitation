@@ -1,0 +1,293 @@
+/* ============================================================
+   VICTOR INVITATION ENGINE V1
+   modules/couple/couple.css
+   Created by Victor Rizki Valentiano
+   ============================================================ */
+
+.couple-section {
+  padding: 6rem 1.5rem;
+  background: var(--color-section-alt, #0e0b07);
+  position: relative;
+}
+
+.couple-bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.couple-bg-pattern {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 20%, var(--color-gold-faint, rgba(200,170,120,0.04)) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, var(--color-gold-faint, rgba(200,170,120,0.04)) 0%, transparent 50%);
+}
+
+.couple-container {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Section Header */
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-label {
+  font-family: var(--font-accent, Georgia, serif);
+  font-style: italic;
+  font-size: 0.85rem;
+  color: var(--color-gold-muted, rgba(200,170,120,0.65));
+  letter-spacing: 0.05em;
+  margin-bottom: 0.75rem;
+}
+
+.section-title {
+  font-family: var(--font-display, Georgia, serif);
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  font-weight: 300;
+  color: var(--color-text, #e8ddd0);
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+}
+
+.section-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1.2rem;
+}
+
+.section-divider span:not(.divider-gem) {
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: var(--color-gold, rgba(200,170,120,0.4));
+}
+
+.divider-gem {
+  font-size: 0.45rem;
+  color: var(--color-gold, rgba(200,170,120,0.7));
+}
+
+/* Couple Cards */
+.couple-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (min-width: 640px) {
+  .couple-cards {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+.couple-card {
+  text-align: center;
+  flex: 1;
+  max-width: 280px;
+}
+
+/* Photo Frame */
+.couple-photo-frame {
+  position: relative;
+  width: 160px;
+  height: 200px;
+  margin: 0 auto 1.5rem;
+}
+
+.couple-photo-border {
+  position: absolute;
+  inset: -8px;
+  border: 1px solid var(--color-gold, rgba(200,170,120,0.3));
+  transform: rotate(2deg);
+  transition: transform 0.4s ease;
+}
+
+.couple-card:hover .couple-photo-border {
+  transform: rotate(0deg);
+}
+
+.couple-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  filter: sepia(15%) contrast(1.05);
+  transition: filter 0.4s ease;
+}
+
+.couple-card:hover .couple-photo {
+  filter: sepia(0%) contrast(1.1);
+}
+
+/* Card Body */
+.couple-role {
+  font-family: var(--font-body, Georgia, serif);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-gold-muted, rgba(200,170,120,0.6));
+  margin-bottom: 0.5rem;
+}
+
+.couple-name {
+  font-family: var(--font-display, Georgia, serif);
+  font-size: clamp(1.3rem, 4vw, 1.7rem);
+  font-weight: 400;
+  color: var(--color-text, #e8ddd0);
+  line-height: 1.2;
+  margin-bottom: 0.6rem;
+}
+
+.couple-parents {
+  font-family: var(--font-body, Georgia, serif);
+  font-size: 0.78rem;
+  line-height: 1.7;
+  color: var(--color-text-muted, rgba(232,221,208,0.55));
+}
+
+/* Ampersand */
+.couple-and {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.couple-and-symbol {
+  font-family: var(--font-display, Georgia, serif);
+  font-size: clamp(3rem, 8vw, 5rem);
+  color: var(--color-gold, #c8aa78);
+  font-weight: 300;
+  font-style: italic;
+  opacity: 0.8;
+  line-height: 1;
+}
+
+.couple-and-lines {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.couple-and-lines span:not(.and-dot) {
+  display: block;
+  width: 20px;
+  height: 1px;
+  background: var(--color-gold, rgba(200,170,120,0.4));
+}
+
+.and-dot {
+  font-size: 0.4rem;
+  color: var(--color-gold, rgba(200,170,120,0.6));
+}
+
+/* Event Details */
+.event-details {
+  margin-top: 4rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .event-details { grid-template-columns: 1fr 1fr; }
+}
+
+.event-card {
+  border: 1px solid var(--color-gold, rgba(200,170,120,0.2));
+  padding: 2rem 1.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.event-card::before {
+  content: '';
+  position: absolute;
+  top: -1px; left: 50%;
+  transform: translateX(-50%);
+  width: 40px; height: 1px;
+  background: var(--color-gold, rgba(200,170,120,0.6));
+}
+
+.event-type {
+  font-size: 0.6rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--color-gold-muted, rgba(200,170,120,0.6));
+  margin-bottom: 0.75rem;
+}
+
+.event-name {
+  font-family: var(--font-display, Georgia, serif);
+  font-size: clamp(1.2rem, 3.5vw, 1.6rem);
+  font-weight: 300;
+  color: var(--color-text, #e8ddd0);
+  margin-bottom: 1rem;
+}
+
+.event-info-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 0.6rem;
+  text-align: left;
+}
+
+.event-info-row svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  fill: var(--color-gold-muted, rgba(200,170,120,0.6));
+  margin-top: 2px;
+}
+
+.event-info-text {
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: var(--color-text-muted, rgba(232,221,208,0.65));
+}
+
+/* Maps */
+.event-maps {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.btn-maps {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.8rem 2rem;
+  border: 1px solid var(--color-gold, rgba(200,170,120,0.5));
+  color: var(--color-gold, #c8aa78);
+  font-family: var(--font-body, Georgia, serif);
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  background: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn-maps:hover {
+  background: var(--color-gold, #c8aa78);
+  color: var(--color-bg, #0e0b07);
+}
+
+.btn-maps svg {
+  width: 14px; height: 14px;
+  fill: currentColor;
+}

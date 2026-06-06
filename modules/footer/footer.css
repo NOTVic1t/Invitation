@@ -1,0 +1,223 @@
+/* ============================================================
+   VICTOR INVITATION ENGINE V1
+   modules/footer/footer.css
+   Created by Victor Rizki Valentiano
+   ============================================================ */
+
+.footer-section {
+  padding: 5rem 1.5rem 3rem;
+  background: var(--color-bg, #0a0806);
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 50% 0%, var(--color-gold-faint, rgba(200,170,120,0.07)) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.footer-container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Couple */
+.footer-couple {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  line-height: 1.1;
+}
+
+.footer-bride,
+.footer-groom {
+  font-family: var(--font-display, Georgia, serif);
+  font-size: clamp(2.2rem, 7vw, 3.8rem);
+  font-weight: 300;
+  color: var(--color-text, #e8ddd0);
+  letter-spacing: 0.02em;
+}
+
+.footer-amp {
+  font-family: var(--font-display, Georgia, serif);
+  font-size: clamp(1.6rem, 5vw, 2.5rem);
+  color: var(--color-gold, #c8aa78);
+  font-style: italic;
+  opacity: 0.7;
+}
+
+/* Divider */
+.footer-divider {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 200px;
+}
+
+.footer-divider span:not(.divider-gem) {
+  flex: 1;
+  height: 1px;
+  background: var(--color-gold, rgba(200,170,120,0.3));
+  display: block;
+}
+
+/* Meta */
+.footer-date {
+  font-family: var(--font-body, Georgia, serif);
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-gold-muted, rgba(200,170,120,0.65));
+}
+
+.footer-location {
+  font-family: var(--font-body, Georgia, serif);
+  font-size: 0.82rem;
+  color: var(--color-text-muted, rgba(232,221,208,0.5));
+  line-height: 1.6;
+}
+
+/* Share */
+.footer-share {
+  width: 100%;
+  max-width: 400px;
+}
+
+.footer-share-label {
+  font-family: var(--font-body, Georgia, serif);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-gold-muted, rgba(200,170,120,0.55));
+  margin-bottom: 1rem;
+}
+
+.footer-share-btns {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid var(--color-gold, rgba(200,170,120,0.25));
+  background: transparent;
+  color: var(--color-text-muted, rgba(232,221,208,0.6));
+  font-family: var(--font-body, Georgia, serif);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  transition: border-color 0.3s ease, color 0.3s ease, background 0.3s ease;
+}
+
+.share-btn:hover {
+  border-color: var(--color-gold, rgba(200,170,120,0.6));
+  color: var(--color-gold, #c8aa78);
+  background: var(--color-input-focus, rgba(200,170,120,0.05));
+}
+
+.share-btn svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+/* Ornament */
+.footer-ornament {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 140px;
+}
+
+.footer-ornament-line {
+  flex: 1;
+  height: 1px;
+  background: var(--color-gold, rgba(200,170,120,0.25));
+}
+
+.footer-ornament-diamond {
+  width: 6px;
+  height: 6px;
+  background: var(--color-gold, rgba(200,170,120,0.5));
+  transform: rotate(45deg);
+  flex-shrink: 0;
+}
+
+/* Quote */
+.footer-quote {
+  max-width: 440px;
+  padding: 0 1rem;
+}
+
+.footer-quote p {
+  font-family: var(--font-body, Georgia, serif);
+  font-size: 0.82rem;
+  font-style: italic;
+  line-height: 1.85;
+  color: var(--color-text-muted, rgba(232,221,208,0.5));
+  margin-bottom: 0.5rem;
+}
+
+.footer-quote cite {
+  font-family: var(--font-body, Georgia, serif);
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  color: var(--color-gold-muted, rgba(200,170,120,0.5));
+  font-style: normal;
+}
+
+/* Credit */
+.footer-credit {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.footer-credit p {
+  font-family: var(--font-body, Georgia, serif);
+  font-size: 0.68rem;
+  color: var(--color-text-muted, rgba(232,221,208,0.3));
+  letter-spacing: 0.05em;
+}
+
+.footer-credit p span {
+  color: var(--color-gold-muted, rgba(200,170,120,0.5));
+}
+
+.footer-credit-link {
+  color: var(--color-gold-muted, rgba(200,170,120,0.5));
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-credit-link:hover {
+  color: var(--color-gold, #c8aa78);
+}
+
+.footer-engine-tag {
+  font-size: 0.58rem !important;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-text-muted, rgba(232,221,208,0.18)) !important;
+}

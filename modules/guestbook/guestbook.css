@@ -1,0 +1,93 @@
+/* ============================================================
+   VICTOR INVITATION ENGINE V1
+   modules/guestbook/guestbook.css
+   Created by Victor Rizki Valentiano
+   ============================================================ */
+
+.guestbook-section {
+  padding: 5rem 1.5rem;
+  background: var(--color-section-dark, #080605);
+}
+
+.guestbook-container {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.guestbook-form-wrap { margin-top: 2rem; }
+
+.gb-form-row { display: flex; flex-direction: column; gap: 1rem; }
+
+/* List */
+.guestbook-list {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.gb-loading {
+  text-align: center;
+  font-family: var(--font-body, Georgia, serif);
+  font-size: 0.8rem;
+  color: var(--color-text-muted, rgba(232,221,208,0.4));
+  font-style: italic;
+  padding: 2rem;
+}
+
+.gb-card {
+  border: 1px solid var(--color-gold, rgba(200,170,120,0.15));
+  padding: 1.25rem 1.5rem;
+  background: var(--color-card-bg, rgba(255,255,255,0.02));
+  position: relative;
+  animation: gbFadeIn 0.4s ease forwards;
+}
+
+@keyframes gbFadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.gb-card::before {
+  content: '"';
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-family: var(--font-display, Georgia, serif);
+  font-size: 3rem;
+  color: var(--color-gold, rgba(200,170,120,0.1));
+  line-height: 1;
+  font-style: italic;
+}
+
+.gb-card-name {
+  font-family: var(--font-display, Georgia, serif);
+  font-size: 0.95rem;
+  color: var(--color-gold, #c8aa78);
+  margin-bottom: 0.5rem;
+}
+
+.gb-card-message {
+  font-family: var(--font-body, Georgia, serif);
+  font-size: 0.85rem;
+  line-height: 1.75;
+  color: var(--color-text-muted, rgba(232,221,208,0.65));
+}
+
+.gb-card-date {
+  margin-top: 0.75rem;
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  color: var(--color-text-muted, rgba(232,221,208,0.3));
+}
+
+.gb-empty {
+  text-align: center;
+  padding: 2rem;
+  font-family: var(--font-body, Georgia, serif);
+  font-size: 0.83rem;
+  color: var(--color-text-muted, rgba(232,221,208,0.4));
+  font-style: italic;
+}
+
+.hidden { display: none !important; }

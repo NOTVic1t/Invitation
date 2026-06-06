@@ -1,0 +1,69 @@
+<section id="rsvp-section" class="section-block rsvp-section" aria-labelledby="rsvp-heading">
+  <div class="rsvp-container">
+    <header class="section-header reveal">
+      <p class="section-label">Konfirmasi Kehadiran</p>
+      <h2 class="section-title" id="rsvp-heading">RSVP</h2>
+      <div class="section-divider" aria-hidden="true"><span></span><span class="divider-gem">◆</span><span></span></div>
+      <p class="section-desc reveal reveal-delay-1">Mohon konfirmasi kehadiran Anda agar kami dapat mempersiapkan dengan sebaik-baiknya</p>
+    </header>
+
+    <div class="rsvp-form-wrap reveal reveal-delay-2">
+      <div id="rsvp-success" class="rsvp-success hidden">
+        <div class="rsvp-success-icon" aria-hidden="true">✦</div>
+        <h3>Terima kasih atas konfirmasinya!</h3>
+        <p>Kami sangat menantikan kehadiran Anda.</p>
+      </div>
+
+      <form id="rsvp-form" class="rsvp-form" novalidate aria-label="RSVP Form">
+        <div class="form-field">
+          <label for="rsvp-name" class="form-label">Nama Lengkap <span aria-hidden="true">*</span></label>
+          <input type="text" id="rsvp-name" name="guest_name" class="form-input" placeholder="Nama Anda" required autocomplete="name" />
+        </div>
+
+        <div class="form-field">
+          <label class="form-label">Kehadiran <span aria-hidden="true">*</span></label>
+          <div class="radio-group" role="radiogroup" aria-label="Pilih kehadiran">
+            <label class="radio-card">
+              <input type="radio" name="attendance" value="hadir" required />
+              <span class="radio-label">
+                <span class="radio-icon" aria-hidden="true">✓</span>
+                Hadir
+              </span>
+            </label>
+            <label class="radio-card">
+              <input type="radio" name="attendance" value="tidak_hadir" />
+              <span class="radio-label">
+                <span class="radio-icon" aria-hidden="true">✗</span>
+                Tidak Hadir
+              </span>
+            </label>
+            <label class="radio-card">
+              <input type="radio" name="attendance" value="mungkin" />
+              <span class="radio-label">
+                <span class="radio-icon" aria-hidden="true">?</span>
+                Mungkin
+              </span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-field" id="rsvp-count-field">
+          <label for="rsvp-count" class="form-label">Jumlah Tamu</label>
+          <input type="number" id="rsvp-count" name="guest_count" class="form-input" min="1" max="10" value="1" />
+        </div>
+
+        <div class="form-field">
+          <label for="rsvp-message" class="form-label">Pesan (opsional)</label>
+          <textarea id="rsvp-message" name="message" class="form-textarea" placeholder="Ucapan atau pesan untuk mempelai..." rows="3"></textarea>
+        </div>
+
+        <div class="form-error hidden" id="rsvp-error" role="alert"></div>
+
+        <button type="submit" class="btn-submit" id="rsvp-submit">
+          <span id="rsvp-submit-text">Kirim Konfirmasi</span>
+          <span id="rsvp-submit-loading" class="hidden">Mengirim...</span>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>

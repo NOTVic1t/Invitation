@@ -1,0 +1,51 @@
+/* ============================================================
+   VICTOR INVITATION ENGINE V1
+   themes/royal/theme.css — Royal Navy Theme
+   Created by Victor Rizki Valentiano
+   ============================================================ */
+
+[data-theme="royal"] {
+  --font-display: 'Cinzel', serif;
+  --font-body:    'Crimson Text', serif;
+  --font-accent:  'Cinzel Decorative', serif;
+
+  --color-bg:           #06080f;
+  --color-section-alt:  #080c14;
+  --color-section-dark: #040610;
+  --color-text:         #dce4f0;
+  --color-text-muted:   rgba(220,228,240,0.55);
+  --color-gold:         #c0a060;
+  --color-gold-muted:   rgba(192,160,96,0.65);
+  --color-gold-faint:   rgba(192,160,96,0.05);
+  --color-gold-bright:  #d4b070;
+  --color-card-bg:      rgba(220,228,240,0.02);
+  --color-input-bg:     rgba(220,228,240,0.04);
+  --color-input-focus:  rgba(192,160,96,0.06);
+  --color-bg-overlay:   rgba(6,8,15,0.88);
+  --color-petal:        rgba(192,160,96,0.3);
+  --opening-overlay:    linear-gradient(160deg,rgba(6,8,15,0.9) 0%,rgba(6,8,15,0.55) 50%,rgba(6,8,15,0.92) 100%);
+}
+
+[data-theme="royal"] .section-title {
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: clamp(1.3rem, 4vw, 2rem);
+}
+
+[data-theme="royal"] .section-label {
+  letter-spacing: 0.3em;
+}
+
+[data-theme="royal"] .opening-bride,
+[data-theme="royal"] .opening-groom {
+  letter-spacing: 0.1em;
+}
+
+[data-theme="royal"] .countdown-section {
+  background: linear-gradient(180deg, #040610 0%, #06080f 100%);
+}
+
+/* Navy accent line */
+[data-theme="royal"] .section-divider span:not(.divider-gem) {
+  background: linear-gradient(90deg, transparent, rgba(192,160,96,0.4), transparent);
+}

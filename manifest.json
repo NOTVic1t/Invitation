@@ -1,0 +1,18 @@
+{
+  "_comment": "Victor Invitation Engine V1 — Created by Victor Rizki Valentiano",
+  "name": "Wedding Invitation",
+  "short_name": "Invitation",
+  "description": "Digital Wedding Invitation powered by Victor Invitation Engine",
+  "start_url": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0a0806",
+  "theme_color": "#c8aa78",
+  "lang": "id",
+  "icons": [
+    { "src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ],
+  "categories": ["lifestyle", "social"],
+  "screenshots": []
+}

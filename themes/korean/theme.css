@@ -1,0 +1,71 @@
+/* ============================================================
+   VICTOR INVITATION ENGINE V1
+   themes/korean/theme.css — Korean Modern Theme
+   Created by Victor Rizki Valentiano
+   ============================================================ */
+
+[data-theme="korean"] {
+  --font-display: 'Noto Serif KR', serif;
+  --font-body:    'Noto Sans KR', sans-serif;
+  --font-accent:  'Noto Serif KR', serif;
+
+  --color-bg:           #0d0d0d;
+  --color-section-alt:  #111111;
+  --color-section-dark: #0a0a0a;
+  --color-text:         #f0ede8;
+  --color-text-muted:   rgba(240,237,232,0.5);
+  --color-gold:         #c9a96e;
+  --color-gold-muted:   rgba(201,169,110,0.65);
+  --color-gold-faint:   rgba(201,169,110,0.04);
+  --color-gold-bright:  #d4b47a;
+  --color-card-bg:      rgba(255,255,255,0.025);
+  --color-input-bg:     rgba(255,255,255,0.04);
+  --color-input-focus:  rgba(201,169,110,0.06);
+  --color-bg-overlay:   rgba(13,13,13,0.88);
+  --color-petal:        rgba(201,169,110,0.25);
+  --opening-overlay:    linear-gradient(180deg,rgba(13,13,13,0.92) 0%,rgba(13,13,13,0.5) 50%,rgba(13,13,13,0.95) 100%);
+}
+
+/* Korean-style horizontal rule: thinner, wider */
+[data-theme="korean"] .section-divider span:not(.divider-gem) {
+  width: 80px;
+}
+
+[data-theme="korean"] .section-title {
+  font-weight: 300;
+  letter-spacing: 0.06em;
+}
+
+[data-theme="korean"] .opening-bride,
+[data-theme="korean"] .opening-groom,
+[data-theme="korean"] .footer-bride,
+[data-theme="korean"] .footer-groom {
+  font-weight: 300;
+  letter-spacing: 0.06em;
+}
+
+/* Clean sharp borders */
+[data-theme="korean"] .event-card,
+[data-theme="korean"] .gb-card,
+[data-theme="korean"] .gift-bank-card {
+  border-left: 2px solid var(--color-gold);
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  padding-left: 1.5rem;
+}
+
+[data-theme="korean"] .form-input,
+[data-theme="korean"] .form-textarea {
+  border-left: 2px solid var(--color-gold);
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  background: transparent;
+  padding-left: 1rem;
+}
+
+[data-theme="korean"] .form-input:focus,
+[data-theme="korean"] .form-textarea:focus {
+  background: rgba(201,169,110,0.03);
+}

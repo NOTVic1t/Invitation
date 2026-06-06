@@ -1,0 +1,109 @@
+/* ============================================================
+   VICTOR INVITATION ENGINE V1
+   modules/story/story.css
+   Created by Victor Rizki Valentiano
+   ============================================================ */
+
+.story-section {
+  padding: 5rem 1.5rem;
+  background: var(--color-section-alt, #0e0b07);
+}
+
+.story-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Timeline */
+.story-timeline {
+  position: relative;
+  margin-top: 3rem;
+}
+
+.story-timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0; bottom: 0;
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, var(--color-gold, rgba(200,170,120,0.3)) 10%, var(--color-gold, rgba(200,170,120,0.3)) 90%, transparent);
+  transform: translateX(-50%);
+}
+
+.story-item {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  align-items: flex-start;
+  position: relative;
+}
+
+.story-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.story-item:nth-child(even) .story-card {
+  text-align: right;
+}
+
+/* Center dot */
+.story-dot {
+  position: absolute;
+  left: 50%;
+  top: 1.5rem;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background: var(--color-gold, #c8aa78);
+  transform: translateX(-50%) rotate(45deg);
+  flex-shrink: 0;
+}
+
+.story-year-badge {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  background: var(--color-bg, #0e0b07);
+  border: 1px solid var(--color-gold, rgba(200,170,120,0.4));
+  color: var(--color-gold, #c8aa78);
+  font-family: var(--font-body, Georgia, serif);
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  padding: 0.2rem 0.6rem;
+  white-space: nowrap;
+}
+
+.story-spacer {
+  flex: 1;
+}
+
+.story-card {
+  flex: 1;
+  padding: 1.5rem;
+  border: 1px solid var(--color-gold, rgba(200,170,120,0.15));
+  background: var(--color-card-bg, rgba(255,255,255,0.02));
+}
+
+.story-card-title {
+  font-family: var(--font-display, Georgia, serif);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  font-weight: 400;
+  color: var(--color-text, #e8ddd0);
+  margin-bottom: 0.5rem;
+}
+
+.story-card-content {
+  font-family: var(--font-body, Georgia, serif);
+  font-size: 0.83rem;
+  line-height: 1.75;
+  color: var(--color-text-muted, rgba(232,221,208,0.6));
+}
+
+@media (max-width: 540px) {
+  .story-timeline::before { left: 16px; }
+  .story-item { flex-direction: column !important; padding-left: 48px; }
+  .story-item .story-spacer { display: none; }
+  .story-item .story-card { text-align: left !important; }
+  .story-year-badge { left: 16px; transform: translateX(-50%); }
+}

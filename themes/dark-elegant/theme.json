@@ -1,0 +1,34 @@
+{
+  "_comment": "Victor Invitation Engine V1 — Dark Elegant Theme — Created by Victor Rizki Valentiano",
+  "name": "dark-elegant",
+  "label": "Dark Elegant",
+  "fonts": {
+    "display": "'Bodoni Moda', Georgia, serif",
+    "body": "'Jost', sans-serif",
+    "accent": "'Bodoni Moda', Georgia, serif",
+    "googleFonts": "https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@300;400;500&display=swap"
+  },
+  "colors": {
+    "bg": "#0c0c0c",
+    "section-alt": "#101010",
+    "section-dark": "#080808",
+    "text": "#e8e2d8",
+    "text-muted": "rgba(232,226,216,0.5)",
+    "gold": "#b09060",
+    "gold-muted": "rgba(176,144,96,0.65)",
+    "gold-faint": "rgba(176,144,96,0.05)",
+    "gold-bright": "#c0a070",
+    "card-bg": "rgba(255,255,255,0.02)",
+    "input-bg": "rgba(255,255,255,0.03)",
+    "input-focus": "rgba(176,144,96,0.06)",
+    "bg-overlay": "rgba(12,12,12,0.9)",
+    "petal": "rgba(176,144,96,0.2)",
+    "primary": "#0c0c0c"
+  },
+  "effects": {
+    "border-radius": "0",
+    "transition-speed": "0.5s"
+  },
+  "particles": false,
+  "opening-overlay": "linear-gradient(160deg,rgba(12,12,12,0.92) 0%,rgba(12,12,12,0.6) 50%,rgba(12,12,12,0.95) 100%)"
+}

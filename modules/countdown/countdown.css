@@ -1,0 +1,105 @@
+/* ============================================================
+   VICTOR INVITATION ENGINE V1
+   modules/countdown/countdown.css
+   Created by Victor Rizki Valentiano
+   ============================================================ */
+
+.countdown-section {
+  padding: 5rem 1.5rem;
+  background: var(--color-section-dark, #080605);
+  position: relative;
+  overflow: hidden;
+}
+
+.countdown-bg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 100%, var(--color-gold-faint, rgba(200,170,120,0.06)) 0%, transparent 70%);
+}
+
+.countdown-container {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Grid */
+.countdown-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 2.5rem auto;
+}
+
+.countdown-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 64px;
+}
+
+.countdown-num {
+  font-family: var(--font-display, Georgia, serif);
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  font-weight: 300;
+  color: var(--color-gold, #c8aa78);
+  line-height: 1;
+  letter-spacing: 0.02em;
+  transition: transform 0.2s ease;
+  display: block;
+  min-width: 2ch;
+  text-align: center;
+}
+
+.countdown-num.tick {
+  animation: numTick 0.2s ease;
+}
+
+@keyframes numTick {
+  0%   { transform: scale(1.1); color: var(--color-gold-bright, #d4b87a); }
+  100% { transform: scale(1); }
+}
+
+.countdown-label {
+  font-family: var(--font-body, Georgia, serif);
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-text-muted, rgba(232,221,208,0.45));
+  margin-top: 0.4rem;
+}
+
+.countdown-sep {
+  font-family: var(--font-display, Georgia, serif);
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  color: var(--color-gold, rgba(200,170,120,0.4));
+  line-height: 1;
+  align-self: flex-start;
+  padding-top: 0.15em;
+  animation: sepBlink 1s step-end infinite;
+}
+
+@keyframes sepBlink {
+  0%, 100% { opacity: 0.5; }
+  50%       { opacity: 0.1; }
+}
+
+.countdown-date-label {
+  font-family: var(--font-body, Georgia, serif);
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-text-muted, rgba(232,221,208,0.5));
+}
+
+.countdown-ended {
+  font-family: var(--font-display, Georgia, serif);
+  font-size: clamp(1rem, 3vw, 1.3rem);
+  color: var(--color-gold, #c8aa78);
+  font-style: italic;
+  margin: 1rem 0;
+}
+
+.hidden { display: none !important; }

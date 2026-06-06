@@ -1,0 +1,50 @@
+/* ============================================================
+   VICTOR INVITATION ENGINE V1
+   themes/minimal/theme.css — Minimal Ivory Theme
+   Created by Victor Rizki Valentiano
+   ============================================================ */
+
+[data-theme="minimal"] {
+  --font-display: 'DM Serif Display', Georgia, serif;
+  --font-body:    'DM Sans', sans-serif;
+  --font-accent:  'DM Serif Text', Georgia, serif;
+
+  --color-bg:           #f5f0ea;
+  --color-section-alt:  #f0ebe4;
+  --color-section-dark: #e8e1d8;
+  --color-text:         #2a2018;
+  --color-text-muted:   rgba(42,32,24,0.55);
+  --color-gold:         #8b6914;
+  --color-gold-muted:   rgba(139,105,20,0.65);
+  --color-gold-faint:   rgba(139,105,20,0.06);
+  --color-gold-bright:  #a07820;
+  --color-card-bg:      rgba(42,32,24,0.03);
+  --color-input-bg:     rgba(42,32,24,0.04);
+  --color-input-focus:  rgba(139,105,20,0.07);
+  --color-bg-overlay:   rgba(245,240,234,0.9);
+  --color-petal:        rgba(139,105,20,0.2);
+  --opening-overlay:    linear-gradient(160deg,rgba(245,240,234,0.88) 0%,rgba(245,240,234,0.6) 50%,rgba(245,240,234,0.92) 100%);
+}
+
+[data-theme="minimal"] body { color: var(--color-text); }
+
+/* Light theme loader */
+[data-theme="minimal"] #engine-loader { background: #f5f0ea; }
+[data-theme="minimal"] .loader-emblem { border-color: rgba(139,105,20,0.2); border-top-color: rgba(139,105,20,0.8); }
+[data-theme="minimal"] .loader-text   { color: rgba(139,105,20,0.5); }
+
+/* Countdown numbers lighter */
+[data-theme="minimal"] .countdown-num { color: var(--color-gold); }
+
+/* Borders darken */
+[data-theme="minimal"] .event-card,
+[data-theme="minimal"] .gift-bank-card,
+[data-theme="minimal"] .gb-card {
+  border-color: rgba(42,32,24,0.12);
+}
+
+[data-theme="minimal"] .gift-tabs {
+  border-color: rgba(42,32,24,0.12);
+}
+
+[data-theme="minimal"] .section-title { font-style: italic; }
